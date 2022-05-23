@@ -1,0 +1,79 @@
+extends common/layout
+
+block content
+  main.main
+    section.work
+      .container
+          h2.work__title How Dreamshare works?
+          .work__inner
+            .steps-1
+              .steps-1__btn Step 1
+              h2.steps-1__title Sed leo enim, condimentum
+              p.steps-1__text
+                | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+            .steps-2
+              .steps-2__btn Step 2
+              h2.steps-2__title Morbi velit risus
+              p.steps-2__text
+                | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+            .steps-3
+              .steps-3__btn Step 3
+              h2.steps-3__title Sed leo enim, condimentum
+              p.steps-3__text
+                | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+    section.meet
+      .container
+        h2.meet__title Meet a partner for your best holiday
+        .meet__inner
+          .meet__item1
+            .meet__person_avatar1
+            h3.meet__name
+              | Bradley Hunter
+            p.meet__text
+              | Based in Chicago. I love playing tennis and loud music.
+          .meet__item2
+            .meet__person_avatar2
+            h3.meet__name
+              | Diana Wells
+            p.meet__text
+              | Living in Athens, Greece. I love black and white classics, chillout music and green tea.
+          .meet__item3
+            .meet__person_avatar3
+            h3.meet__name
+              | Marie Bennett
+            p.meet__text
+              | Currently living in Colorado. Lover of art, languages and travelling.
+          .meet__item4
+            .meet__person_avatar4
+            h3.meet__name
+              | Christopher Pierce
+            p.meet__text
+              | Star Wars fanatic. I have a persistent enthusiasm to create new things.
+        button.meet__btn
+          a.meet__link(href='#') See other partners
+    section.activity
+      .container
+        h2.activity__title
+          | Discover holiday activity ideas
+        .activity__inner
+          .activity__sport
+            h4.activity__name Sports and Activis
+          .activity__health
+            h4.activity__name Wellness and Health
+          .activity__expeditions
+            h4.activity__name Extreme Sports and Expeditions
+          .activity__games
+            h4.activity__name Games
+          .activity__culture
+            h4.activity__name Culture and Education
+          .activity__enjomet
+            h4.activity__name Enjomet and Relaxation
+          .activity__trevelling
+            h4.activity__name Trevelling
+    section.create
+      .container
+        h2.create__title Crate your holiday activity
+        p.create__text Hi! What are your holiday interests?
+        form.create__form
+          input.create__input(type='text', placeholder='Enter your insterests')
+          button.create__btn Search partners

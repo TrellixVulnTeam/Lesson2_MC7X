@@ -1,0 +1,77 @@
+.header {
+    min-width: 320px;
+    margin: 0 auto;
+    background: url("../images/background_main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+  }
+  .menu-btn {
+    width: 153px;
+    height: 36px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    &__login {
+      color: #ffffff;
+      background: none;
+      padding: 11px 0px;
+      margin-right: 19px;
+      border: none;
+    }
+    &__signup {
+      width: 90px;
+      height: 36px;
+      color: #ffffff;
+      background: none;
+      padding: 9px 0px;
+      border: 2px solid #ffffff;
+      border-radius: 40px;
+    }
+  }
+  .logo {
+    width: 145px;
+    margin: 97px auto 26.5px;
+    &__link {
+      @include text(21px, 700, 24px, #ffffff);
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+  .block-text {
+    width: 281px;
+    height: 234px;
+    margin: 0 auto 153px;
+    text-align: $a;
+    &__title {
+      @include text(30px, 700, 37px, #ffffff);
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1.5px;
+    }
+    &__subtitle-block {
+      width: 279px;
+      height: 49px;
+      margin: 6px 0 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_subtitle {
+        @include text(18px, 300, 24px, #F7F3F2);
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+    &__btn {
+      border-radius: $radius;
+      background-color: $bg-pink;
+      border: none;
+      width: 282px;
+      height: 40px;
+      color: $white;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.6px;
+      font-size: 14px;
+    }
+  }
